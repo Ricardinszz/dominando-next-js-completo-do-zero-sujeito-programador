@@ -34,8 +34,8 @@ Este repositório reúne exemplos mínimos e explicações rápidas sobre funcio
 Pré-requisitos: Node.js (versão LTS), npm ou yarn.
 
 ```bash
-# clonar (se já existir o repositório)
-git clone https://github.com/SEU_USUARIO/NOME_REPO.git
+# clonar 
+git clone https://github.com/Ricardinszz/dominando-next-js-completo-do-zero-sujeito-programador?tab=readme-ov-file#o-que-tem-aqui
 cd NOME_REPO
 
 # instalar dependências
