@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Guia Next JS completo
 
-## Getting Started
+Um repositório com anotações e exemplos para aprender os conceitos essenciais do Next.js (app router). Ideal para estudos e consultas rápidas.
 
-First, run the development server:
+---
+
+## Sumário
+- [O que tem aqui](#o-que-tem-aqui)
+- [Como rodar localmente](#como-rodar-localmente)
+- [Tópicos do guia](#tópicos-do-guia)
+  - [Criação de projetos](#criação-de-projetos)
+  - [Estrutura de pastas do Next.js](#estrutura-de-pastas-do-nextjs)
+  - [Roteamento e navegação de páginas](#roteamento-e-navegação-de-páginas)
+  - [Not Found](#not-found)
+  - [Metadata (SEO)](#metadata-seo)
+  - [Server x Client components](#server-x-client-components)
+  - [Rotas Dinâmicas](#rotas-dinâmicas)
+  - [Actions (server actions)](#actions-server-actions)
+  - [Revalidate / Cache (ISR)](#revalidate--cache-isr)
+  - [Cache Fetch — exemplo](#cache-fetch---exemplo)
+  - [Middleware](#middleware)
+  - [Route Handlers (API no app)](#route-handlers-api-no-app)
+- [Contribuições](#contribuições)
+- [Licença](#licença)
+
+---
+
+## O que tem aqui
+Este repositório reúne exemplos mínimos e explicações rápidas sobre funcionalidades do Next.js (app directory): criação do projeto, roteamento, componentes server/client, cache, middleware, handlers de rota, e mais.
+
+---
+
+## Como rodar localmente
+Pré-requisitos: Node.js (versão LTS), npm ou yarn.
 
 ```bash
+# clonar (se já existir o repositório)
+git clone https://github.com/SEU_USUARIO/NOME_REPO.git
+cd NOME_REPO
+
+# instalar dependências
+npm install
+
+# rodar em modo dev
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# acessar http://localhost:3000
