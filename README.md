@@ -14,6 +14,7 @@ Um repositório com anotações e exemplos para aprender os conceitos essenciais
   - [Not Found](#not-found)
   - [Metadata (SEO)](#metadata-seo)
   - [Server x Client components](#server-x-client-components)
+  - [Action](#action)
   - [Rotas Dinâmicas](#rotas-dinâmicas)
   - [Actions (server actions)](#actions-server-actions)
   - [Revalidate / Cache (ISR)](#revalidate--cache-isr)
