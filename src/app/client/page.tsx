@@ -18,6 +18,10 @@ export default function PageClient () {
             Pagina Client
             </h1>
 
+            <button onClick={() => alert("TESTE!")}>
+                TESTE
+            </button>
+
             <div className="flex flex-col gap-4 mx-2">
             {posts.map((post: any) => (
                 <div key={post.id} className="bg-gray-200 p-4 rounded-md">
@@ -27,6 +31,7 @@ export default function PageClient () {
             ))}
         </div>
         
+
     </div>
     )
 }
