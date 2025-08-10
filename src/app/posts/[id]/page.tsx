@@ -1,24 +1,24 @@
+import { Suspense } from "react";
 import { PostProps } from "../page";
+import { PostInfo } from "./_components/post";
 
-export default  async function DetailPost({
+export default async function DetailPost({
     params
-} : {
-    params : Promise<{id: string }>
+}: {
+    params: Promise<{ id: string }>
 }) {
 
     const { id } = await params;
 
-    const response = await fetch(`https://dummyjson.com/posts/${id}`)
-        const data: PostProps = await response.json()
-    
-
-
-    return(
+    return (
         <div>
-            <h1>Detalhe do Post: {id}</h1>
+            <h1 className="text-4xl font-bold text-center">
+                Detalhe do Post: {id}
+                </h1>
 
-            <h2>{data.title}</h2>
-            <p>{data.body}</p>
+            <Suspense fallback={<h1>Carregando post...</h1>}>
+            <PostInfo id={id} />
+            </Suspense>
         </div>
     )
 }
